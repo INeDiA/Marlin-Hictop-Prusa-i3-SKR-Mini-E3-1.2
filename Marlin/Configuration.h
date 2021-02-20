@@ -483,14 +483,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // CL: HICTOP i3 (China), post PID tuning
-  #define  DEFAULT_Kp 27.64
-  #define  DEFAULT_Ki 2.15
-  #define  DEFAULT_Kd 88.63
+  #define  DEFAULT_Kp 24.82
+  #define  DEFAULT_Ki 1.84
+  #define  DEFAULT_Kd 83.56
   
-  // Creality Ender-3
-  // #define DEFAULT_Kp 21.73
-  // #define DEFAULT_Ki 1.54
-  // #define DEFAULT_Kd 76.55
 
 #endif // PIDTEMP
 
@@ -528,9 +524,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //Hictop Prusa i3 stock bed
-  #define DEFAULT_bedKp 104.89
-  #define DEFAULT_bedKi 19.82
-  #define DEFAULT_bedKd 370.02
+  #define DEFAULT_bedKp 74.82
+  #define DEFAULT_bedKi 11.24
+  #define DEFAULT_bedKd 331.89
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -954,7 +950,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 62, -1.12 } 
+#define NOZZLE_TO_PROBE_OFFSET { -34, -3, -3.9 } 
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1090,8 +1086,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 210
-#define Y_BED_SIZE 240
+#define X_BED_SIZE 200
+#define Y_BED_SIZE 260
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
